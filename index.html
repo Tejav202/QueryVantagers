@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueryVantage | AI Query Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2><i class="fas fa-database"></i> QueryVantage</h2>
+            <p class="tagline">Natural Language to MongoDB</p>
+            <div class="info-card">
+                <h3>Allowed Operations</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> .find()</li>
+                    <li><i class="fas fa-check"></i> .aggregate()</li>
+                    <li><i class="fas fa-check"></i> .countDocuments()</li>
+                </ul>
+            </div>
+            <div class="info-card warning">
+                <h3>Blocked Keywords</h3>
+                <p>Delete, Drop, Remove, Update, Replace</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Generate MQL</h1>
+                <p>Enter your request in plain English to get a valid MongoDB query.</p>
+            </header>
+
+            <section class="input-area">
+                <textarea id="userInput" placeholder="e.g., Show all users from Chennai..."></textarea>
+                <button id="generateBtn">
+                    <span>Generate Query</span>
+                    <i class="fas fa-magic"></i>
+                </button>
+            </section>
+
+            
+            <section class="output-area">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">Output Console</span>
+                </div>
+                <div class="terminal-body">
+                    <pre id="outputCode">// Your generated MQL will appear here...</pre>
+                </div>
+                <div id="statusBadge" class="status-badge hidden">
+                    <i id="statusIcon"></i> <span id="statusText"></span>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
