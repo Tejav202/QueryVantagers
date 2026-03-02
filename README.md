@@ -23,3 +23,16 @@ Gemini AI
 Query Validation
    ↓
 Safe MQL Output
+
+#   UI/UX and Database Authencity 
+   An User-Friendly and SPA UI that is responsive and can be easily process natural language I.e Human Inputs into JSON OR BSON OR MQL Format 
+
+   ## Developed By 
+
+   M . Venkata Teja - AI/ML & MERN 
+
+   ## Features 
+   -No Server Crashes (SPA)
+   -Easy JWT Aurhenciation and API Key  verification 
+   -Supports both MRRN and Basic Web Stacks like HTML5
+   -Users DOM elements to perform certain tasks .
